@@ -17,6 +17,8 @@ prediction, making it suitable for quick threat screening as well as offline sec
   <li>Analyzes URL-level, domain-based, and statistical security features.</li>
   <li>Supports both real-time inference and batch prediction workflows.</li>
   <li>Emphasizes correct ML system design rather than isolated model training.</li>
+   <li>Uses a Random Forest classifier trained on engineered phishing features.</li>
+  <li>Achieves a classification accuracy of <b>90.4971%</b> on evaluation data.</li>
 </ul>
 
 <hr/>
@@ -206,3 +208,4 @@ This project goes beyond basic phishing detection by focusing on proper ML syste
 ETL pipelines, and realistic deployment constraints. It demonstrates not only model building,
 but also how machine learning systems are engineered and deployed in real-world security scenarios.
 </p>
+
