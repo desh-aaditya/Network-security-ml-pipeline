@@ -30,7 +30,8 @@ from sklearn.ensemble import (
     GradientBoostingClassifier,
     RandomForestClassifier,
 )
-
+import dagshub
+dagshub.init(repo_owner='desh-aaditya', repo_name='Malicious-Website-Detection-using-Machine-Learning', mlflow=True)
 
 class ModelTrainer:
     def __init__(
@@ -158,7 +159,7 @@ class ModelTrainer:
                 file_path=self.model_trainer_config.trained_model_file_path,
                 obj=network_model,
             )
-
+            save_object("final_models/model.pkl",best_model)
             model_trainer_artifact = ModelTrainerArtifact(
                 trained_model_file_path=self.model_trainer_config.trained_model_file_path,
                 train_metric_artifact=train_metric,
